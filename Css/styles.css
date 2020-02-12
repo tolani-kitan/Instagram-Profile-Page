@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    min-height: 100%;
+    background: #f2f2f2;
+}
+
+.head { 
+    height: 77px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: sticky;
+    align-items: center;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 20px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+
+
+.container {
+    display: flex;
+    margin-top: 20px;
+    width: auto;
+    /* padding: 0 160px; */
+    justify-content: space-evenly;
+}
+
+#pics {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.line {
+   background-color: black;
+    height: 25px;
+    width: 1px;
+    margin-left: 15px; 
+    margin-right: 15px;
+}
+
+.sub-head-left {
+    display: flex;
+    justify-content: space-between;
+}
+
+.like {
+    margin: 0px 15px;
+}
+
+#likes  {
+    padding: 10px;
+}
+
+.menu {
+    display: block;
+    margin-left: 20px;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    max-width: 600px;
+    border: 1px solid #dbdbdb;
+    align-items: center;
+    overflow-x: auto;
+    margin: 0px 0px;
+}
+
+.circles img {
+    height: 65px;
+    width: 65px;
+    border-radius: 100%;
+    padding: 2px;
+    border: 2px solid red
+}
+
+ .menu p {
+    font-size: 13px;
+    text-align: center;
+    color: #262626;
+}
+
+
+
+.right-section {
+    margin-right: 28px;
+    max-width: 615px;
+    width: 100%;
+}
+
+.timeline {
+    width: 550px;
+    background-color: #fff;
+    margin: 50px auto;
+    border-radius: 3px;
+    border: 1px solid #e6e6e6;
+
+}
+
+.circles-small img {
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    padding: 2px;
+    border: 2px solid red
+}
+
+.dots {
+    height: 60px;
+    justify-content: center;
+    /* position: absolute; */
+    float: right;
+}
+
+.name-flex {
+    display: flex;
+}
+
+.username {
+    margin: 0 10px;
+}
+
+.username p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.username span {
+    font-size: 13px;
+}
+
+.dots p {
+    font-weight: bold;
+    font-size: 20px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 10px;
+}
+
+.flex1 {
+    margin-top: 30px;
+}
+
+.main-img img{
+    width: 100%;
+    height: 100%;
+    background: center cover/center;
+}
+
+.lcss {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    width: auto;
+}
+
+.lcs {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.addComment {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 30px;
+	border-top: 1px solid rgb(219, 219, 219);
+	margin: 40px 0;
+    align-items: center;
+    padding-top: 25px;
+}
+.addComment input {
+	width: 100%;
+	height: 30px;
+	border: none;
+	padding-left: 25px;
+}
+.addComment a{
+    opacity: .3;
+    padding-right: 10px;
+}
+.comments p:nth-child(2){
+    padding: 10px 20px;
+}
+.comments p a{
+    color: rgb(156, 156, 156);
+}
+
+
+
+#align {
+    padding: 10px 13px;
+    font-size: 14px;
+}
+
+#align1 {
+    padding: 2px 13px;
+    font-size: 14px;
+}
+
+#time {
+    color: #b3b3b3;
+    font-size: 12px;
+}
+
+@media (max-width: 490px) {
+    .head { 
+        height: 45px;
+        width: auto;
+        position: sticky;
+        align-items: center;
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 26px 20px;
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    .nav {
+        display: flex;
+        width: auto;
+        height: 120px;
+        border: 1px solid #dbdbdb;
+        align-items: center;
+        overflow-x: auto;
+        margin: 0px 0px;
+    }
+    .container {
+        display: flex;
+        margin-top: 0px;
+        width: inherit;
+        /* padding: 0 160px; */
+        justify-content: space-evenly;
+    }
+
+    main {
+        width: 50%;
+        margin: 0;
+        padding: 0px;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .left-section {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .right-section {
+        margin-right: 0px;
+        width: auto;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        padding: 0 10px;
+    }
+    
+    .search-bar {
+        display: none;
+    }
+
+    .timeline {
+        max-width: 500px;
+    }
+
+    .addComment {
+        display: none;
+    }
+
+    .right-nav {
+        display: none;
+    }
+}
